@@ -1,0 +1,36 @@
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get dist-upgrade
+sudo apt-get install python-dev  
+sudo apt-get install build-essential 
+sudo apt-get install git-core
+Dans sudo raspi-config
+	Aller dans : Advanced Options
+	A6 SPI 
+	Would you like the SPI kernel module to be loaded by default?  Répondre oui
+	SPI kernel module will now be loaded by default 	OK
+Installation à partir de GITHUB
+git clone https://github.com/Michelgard/nrf24pihub.git
+cd ../RPi.GPIO-0.5.11
+sudo python setup.py install
+cd ..
+sudo pip install spidev
+
+Installer arduino_michelgard_rx_tx.ino sur votre ARDUINO. C’est un exemple qui envoie un message toutes les trois secondes avec un compteur et l’arduino retourne le message. 
+Connexion nRF24L01+ sur l’arduino : 
+1 GND			2 VCC 3.3  
+3 D9			4 D10
+5 D13			6 D11
+7 D12			8 D2
+
+Installer nRF24L01+ sur le Raspberry PI
+NRFL01		Rasppi
+1		6 GND			
+2		1 VCC 3.3  
+3		22 CE	
+4		24 CSN
+5		23 SCK			
+6		19 MOSI
+7		21 MISO			
+
+Lancer sur le raspberry Pi : sudo python multi_capteurs-NF24.py
