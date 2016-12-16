@@ -18,7 +18,7 @@ sudo python setup.py install
 cd ..
 sudo pip install spidev
 
-Installer arduino_michelgard_rx_tx.ino sur votre ARDUINO. C’est un exemple qui envoie un message toutes les trois secondes avec un compteur et l’arduino retourne le message. 
+Installer Programme-Arduino.ino sur votre ARDUINO.  
 Connexion nRF24L01+ sur l’arduino : 
 1 GND			2 VCC 3.3  
 3 D9			4 D10
