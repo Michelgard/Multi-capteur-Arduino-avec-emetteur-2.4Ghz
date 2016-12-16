@@ -11,8 +11,8 @@ Dans sudo raspi-config
 	Would you like the SPI kernel module to be loaded by default?  Répondre oui
 	SPI kernel module will now be loaded by default 	OK
 Installation à partir de GITHUB
-git clone https://github.com/Michelgard/nrf24pihub.git
-cd ../RPi.GPIO-0.5.11
+git clone https://github.com/Michelgard/Multi-capteur-Arduino-avec-emetteur-2.4Ghz.git
+cd Multi-capteur-Arduino-avec-emetteur-2.4Ghz/RPi.GPIO-0.5.11
 sudo python setup.py install
 cd ..
 sudo pip install spidev
